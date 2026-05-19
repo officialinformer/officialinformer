@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Odisha Recruitment Portal</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    :root{
+      --primary:#2563eb;
+      --secondary:#06b6d4;
+      --card:#1e293b;
+      --hover:#334155;
+      --text:#f1f5f9;
+    }
+
+    header{
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      padding:30px 20px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1rem;
+      opacity:0.9;
+    }
+
+    .theme-btn{
+      margin-top:15px;
+      padding:10px 20px;
+      border:none;
+      border-radius:30px;
+      cursor:pointer;
+      background:white;
+      color:#111;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .theme-btn:hover{
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:40px 20px;
+    }
+
+    .section-title{
+      font-size:2rem;
+      margin-bottom:25px;
+      color:#38bdf8;
+      text-align:center;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:20px;
+      padding:20px;
+      transition:0.4s;
+      position:relative;
+      overflow:hidden;
+      animation:fadeIn 1s ease;
+      box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background:var(--hover);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .card a{
+      display:block;
+      text-decoration:none;
+      color:white;
+      margin:8px 0;
+      padding:10px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.05);
+      transition:0.3s;
+    }
+
+    .card a:hover{
+      background:var(--primary);
+      transform:translateX(5px);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#020617;
+      margin-top:40px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* Light Theme */
+
+    body.light{
+      background:#f1f5f9;
+      color:#111;
+    }
+
+    body.light .card{
+      background:white;
+      color:#111;
+    }
+
+    body.light .card a{
+      color:#111;
+      background:#e2e8f0;
+    }
+
+    body.light footer{
+      background:#cbd5e1;
+      color:#111;
+    }
+
+    body.light header{
+      color:white;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:1.8rem;
+      }
+
+      .section-title{
+        font-size:1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Odisha Recruitment Portal</h1>
+  <p>Government Jobs • Private Careers • District Portals • Recruitment Boards</p>
+
+  <button class="theme-btn" onclick="toggleTheme()">
+    Change Theme
+  </button>
+</header>
+
+<!-- Recruitment Boards -->
+
+<section>
+  <h2 class="section-title">Recruitment Boards</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Odisha Boards</h3>
+
+      <a href="https://www.ossc.gov.in/" target="_blank">
+        OSSC
+      </a>
+
+      <a href="https://www.opsc.gov.in/" target="_blank">
+        OPSC
+      </a>
+
+      <a href="https://www.osssc.gov.in/" target="_blank">
+        OSSSC
+      </a>
+
+      <a href="https://ssc.nic.in/" target="_blank">
+        SSC
+      </a>
+
+      <a href="https://www.upsc.gov.in/" target="_blank">
+        UPSC
+      </a>
+
+      <a href="https://www.rrcbbs.org.in/" target="_blank">
+        Railway Recruitment Board
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- District Websites -->
+
+<se<!-- Odisha District Official Websites -->
+
+<section>
+  <h2 class="section-title">Odisha District Official Websites</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>District Portals</h3>
+
+      <a href="https://angul.odisha.gov.in/en/" target="_blank">Angul</a>
+
+      <a href="https://balangir.odisha.gov.in/en/" target="_blank">Balangir</a>
+
+      <a href="https://balasore.odisha.gov.in/en/" target="_blank">Balasore</a>
+
+      <a href="https://bargarh.odisha.gov.in/en/" target="_blank">Bargarh</a>
+
+      <a href="https://bhadrak.odisha.gov.in/en/" target="_blank">Bhadrak</a>
+
+      <a href="https://boudh.odisha.gov.in/en/" target="_blank">Boudh</a>
+
+      <a href="https://cuttack.odisha.gov.in/en/" target="_blank">Cuttack</a>
+
+      <a href="https://deogarh.odisha.gov.in/en/" target="_blank">Deogarh</a>
+
+      <a href="https://dhenkanal.odisha.gov.in/en/" target="_blank">Dhenkanal</a>
+
+      <a href="https://gajapati.odisha.gov.in/en/" target="_blank">Gajapati</a>
+
+      <a href="https://ganjam.odisha.gov.in/en/" target="_blank">Ganjam</a>
+
+      <a href="https://jagatsinghpur.odisha.gov.in/en/" target="_blank">Jagatsinghpur</a>
+
+      <a href="https://jajpur.odisha.gov.in/en/" target="_blank">Jajpur</a>
+
+      <a href="https://jharsuguda.odisha.gov.in/en/" target="_blank">Jharsuguda</a>
+
+      <a href="https://kalahandi.odisha.gov.in/en/" target="_blank">Kalahandi</a>
+
+      <a href="https://kandhamal.odisha.gov.in/en/" target="_blank">Kandhamal</a>
+
+      <a href="https://kendrapara.odisha.gov.in/en/" target="_blank">Kendrapara</a>
+
+      <a href="https://kendujhar.odisha.gov.in/en/" target="_blank">Kendujhar</a>
+
+      <a href="https://khordha.odisha.gov.in/en/" target="_blank">Khordha</a>
+
+      <a href="https://koraput.odisha.gov.in/en/" target="_blank">Koraput</a>
+
+      <a href="https://malkangiri.odisha.gov.in/en/" target="_blank">Malkangiri</a>
+
+      <a href="https://mayurbhanj.odisha.gov.in/en/" target="_blank">Mayurbhanj</a>
+
+      <a href="https://nabarangpur.odisha.gov.in/en/" target="_blank">Nabarangpur</a>
+
+      <a href="https://nayagarh.odisha.gov.in/en/" target="_blank">Nayagarh</a>
+
+      <a href="https://nuapada.odisha.gov.in/en/" target="_blank">Nuapada</a>
+
+      <a href="https://puri.odisha.gov.in/en/" target="_blank">Puri</a>
+
+      <a href="https://rayagada.odisha.gov.in/en/" target="_blank">Rayagada</a>
+
+      <a href="https://sambalpur.odisha.gov.in/en/" target="_blank">Sambalpur</a>
+
+      <a href="https://subarnapur.odisha.gov.in/en/" target="_blank">Subarnapur</a>
+
+      <a href="https://sundargarh.odisha.gov.in/en/" target="_blank">Sundargarh</a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Government Companies -->
+
+<section>
+  <h2 class="section-title">Government Companies Careers</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>PSU Career Pages</h3>
+
+      <a href="https://careers.ntpc.co.in/" target="_blank">NTPC</a>
+      <a href="https://careers.gail.co.in/" target="_blank">GAIL</a>
+      <a href="https://www.nalcoindia.com/careers/" target="_blank">NALCO</a>
+      <a href="https://www.coalindia.in/career-cil/" target="_blank">Coal India</a>
+      <a href="https://www.iocl.com/latest-job-opening" target="_blank">IOCL</a>
+      <a href="https://careers.bhel.in/" target="_blank">BHEL</a>
+      <a href="https://www.isro.gov.in/Careers.html" target="_blank">ISRO</a>
+      <a href="https://www.drdo.gov.in/careers" target="_blank">DRDO</a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Private Companies -->
+
+<section>
+  <h2 class="section-title">Private Companies Careers</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>IT & Private Jobs</h3>
+
+      <a href="https://careers.tcs.com/" target="_blank">TCS</a>
+      <a href="https://www.infosys.com/careers.html" target="_blank">Infosys</a>
+      <a href="https://careers.wipro.com/" target="_blank">Wipro</a>
+      <a href="https://www.hcltech.com/careers" target="_blank">HCLTech</a>
+      <a href="https://careers.accenture.com/" target="_blank">Accenture</a>
+      <a href="https://www.cognizant.com/us/en/careers" target="_blank">Cognizant</a>
+      <a href="https://careers.google.com/" target="_blank">Google</a>
+      <a href="https://www.amazon.jobs/en/" target="_blank">Amazon</a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <h3>Odisha Recruitment Portal</h3>
+  <p>Responsive Recruitment Website with Modern UI Design</p>
+</footer>
+
+<script>
+
+  function toggleTheme(){
+    document.body.classList.toggle("light");
+  }
+
+  // Scroll Animation
+
+  const cards = document.querySelectorAll('.card');
+
+  window.addEventListener('scroll', () => {
+
+    cards.forEach(card => {
+
+      const cardTop = card.getBoundingClientRect().top;
+
+      if(cardTop < window.innerHeight - 100){
+        card.style.opacity = "1";
+        card.style.transform = "translateY(0)";
+      }
+
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
